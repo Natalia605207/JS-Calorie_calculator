@@ -1,0 +1,191 @@
+body {
+    background-image: url("assets/cover.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #3F2500;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main {
+    background: rgba(240,222,180,0.9);
+    box-shadow: 1px 1px 2px #000000, 0 0 1em black;
+    width: 70%;
+}
+
+.heading {
+    background: #c19a2b;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 20px 0px 7px;
+    color: #fff;
+}
+
+.par {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0px 0px 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+.gender {
+    accent-color:#1A4D2E;
+    width: 15px;
+    height: 15px;
+}
+
+input, select {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color:#1A4D2E;
+}
+
+input {
+    width: 80px;
+}
+
+select {
+    width: 200px;
+}
+
+#calculate {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-self: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #94A900;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#calculate:hover {
+    background-color: #4B9E40;
+}
+
+#result {
+    background-color: #c19a2b;
+    color: #fff;
+    display: none;
+    width: 100%;
+}
+
+.bottom {
+font-size: 25px;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-shadow: 1px 1px 2px #000000;
+padding: 0px 7px;
+}
+
+#calories {
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #94A900;
+    font-weight: 600;
+}
+
+@media all and (max-width: 820px) {
+    #main {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 540px) {
+    #main {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 27px;
+        padding: 0px 5px;
+    }
+
+    .par {
+        font-size: 16px;
+        padding: 10px 7px 5px;
+    }
+
+    label {
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+
+    .bottom {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px 0px;
+    }
+
+    #calories {
+        font-size: 27px;
+    }
+}
+
+@media all and (max-width: 300px) {
+h1 {
+    font-size: 25px;
+}
+
+select {
+    width: 150px;
+}
+}

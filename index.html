@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>🍴Calorie calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="main" class="column">
+         <div class="heading column">
+            <h1>Calorie calculator</h1>
+            <p class="par">Find out your daily calorie intake</p>
+         </div>
+         <form>
+            <div class="container center">
+               <label>Gender</label>
+                  <input type="radio" name="gender" class="gender" value="male" checked>
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" class="gender" value="female">
+                  <label for="female">Female</label>
+            </div>
+            <div class="container center">
+               <label>Age</label>
+               <input type="text" placeholder="25" id="age">
+               <label>years</label>
+            </div>
+            <div class="container center">
+               <label>Weight</label>
+               <input type="text" placeholder="65" id="weight">
+               <label>kg</label>
+            </div>
+            <div class="container center">
+               <label>Height</label>
+               <input type="text" placeholder="165" id="height">
+               <label>cm</label>
+            </div>
+            <div class="container center">
+               <label>Activity</label>
+               <select id="physicalActivityLevel">
+                  <option value="1.00" selected>Basal Metabolic Rate (BMR)</option>
+                  <option value="1.20">Little or no exercise</option>
+                  <option value="1.375">Exercise 3 times/week</option>
+                  <option value="1.4625">Exercise 5 times/week</option>
+                  <option value="1.550">Intense exercise 5 times/week</option>
+                  <option value="1.6375">Daily exercise</option>
+                  <option value="1.9">Daily exercise and physical job</option>
+               </select>
+            </div>
+            <button id="calculate">Calculate</button>
+         </form>
+         <div id="result" class="center">
+            <p class="bottom">Your daily calorie intake should be <span id="calories"></span> calories</p>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="index.js"></script>
+   </body>
+</html>
